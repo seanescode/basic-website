@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
+	
+	<!--Google map script for contact Us location-->
+	<script
+		src="http://maps.googleapis.com/maps/api/js">
+	</script>
+
+	<script>
+	
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(53.331110, -6.359747),//Here set the exact location (latitude and longitude) being shown.
+			zoom:13,//Here can set the level of zoom on Google map, the higher the more specific (more zoomed in).
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	
+</head>
+
+<body>
+
+<!--This is the header section in the body-->
+	<div id="header">
+	
+			<div id="logo">
+				<a href="home.html"><img src="images/rbowLogo2d.png" onmouseover="this.src='images/rbowLogo2e.png'" onmouseout="this.src='images/rbowLogo2d.png'"/></a><!--Insert the headers logo-->
+			</div>
+			
+			
+			<ul id="navigation">
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="gallery.html">Gallery</a>
+				</li>
+				<li>
+					<a href="products.html">Products</a>
+				</li>
+				<li class = "selected"><!--This will ensure the selected link on the header is formatted using the "selected" class in the css file-->
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		
+	</div><!--the closing div in the header section-->
+	
+	
+	
+	
+	
+	
+	
+	<div id="contents">
+	
+	<div id="contactPanel">
+	<div id="contactSidePanel"><!--This panel has to be put in before the main panel as floats go first if want it to work-->
+		
+		<div id="sidePanelHeader">
+			<h1>Products</h1>
+		</div>
+		<p>
+			Experienced Advice, Design, Colour Visuals, Measurement Surveys, Pricing, Manufacture, Installation and Servicing.<br>
+			<a href="products.html">Read more [+]</a>
+		</p>
+		
+	</div>
+	
+	<div id="contactSidePanel2"> <!--This panel has to be put in before the main panel as floats go first if want it to work-->
+	
+	<div id="sidePanelHeader">
+			<h1>View our work!</h1>
+		</div>
+		<p>
+			We have worked for some of the biggest companies around! Why not have a look for yourself!<br>
+			<a href="gallery.html">Read more [+]</a>
+		</p>
+	
+	</div>
+	</div>
+	
+	
+		
+			
+	
+	
+	
+	
+	<div id="contact">
+	
+		<h1>Contact Us</h1>
+		<hr>
+		<p><b>Tel:</b> +353 1 620 4963 <br><b>Address:</b> Unit 46 Canal Walk, Park West Industrial Estate, Dublin.<hr><br></p>
+			
+		
+		<h2>Leave a message</h2><br>
+		
+		<div id = "contactForm">
+			<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+			<div class="row">
+				<label for="name">Your name:</label><br />
+				<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+			</div>
+			<div class="row">
+				<label for="email">Your email:</label><br />
+				<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+			</div>
+			<div class="row">
+				<label for="message">Your message:</label><br />
+				<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+			</div>
+			<br>
+			<input id="submit_button" type="submit" value="Send email" />
+			</form>	
+		</div>	
+		
+		<h2>Need directions to Rainbow Signs?</h2><br>
+	
+		<div id="googleMap" style="width:500px;height:300px;"></div><!--The one line of code needed in the body for map-->
+		
+		
+	</div>
+	
+	
+	
+	
+
+</div>
+
+
+
+<div id="footer">
+
+<p>© Copyright: All rights reserved</p>
+
+<ul id="footerNavigation">
+	<li>
+		<a href="home.html">Home</a>
+	</li>
+	<li>
+		<a href="gallery.html">Gallery</a>
+	</li>
+	<li>
+		<a href="products.html">Products</a>
+	</li>
+	<li>
+		<a href="contact.html">Contact</a>
+	</li>
+</ul>
+	
+</div>	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+<!--could embed Facebook profile if had one using the following code: 
+
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FYOUR-FB-PAGE-ID&width=600&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=435" scrolling="yes" frameborder="0" style="border:none; overflow:hidden; width:600px; height:430px; background: white; float:left; " allowtransparency="true">
+</iframe>
+
+
+-->

@@ -1,0 +1,484 @@
+/*------------------------------ HEADER ------------------------------*/
+#header {
+	background-color: black;
+	/*background-image: url(../images/subtleBackground5.jpg);*/
+	height: 60px;
+	border-bottom: 4px solid orange;
+	width: 1000px;/*This sets the width of the navigation (header bar)*/
+	margin: 20px auto 0px ;/*This increases the distance of the navigation(header bar) from the top of the page*/
+	padding: 7px 0px 0px 10px;/*This increases the size of the area: top, right, bottom and left - respectively*/
+	text-align: center;
+}
+
+/* Logo*/
+#logo {
+	float: left;/*This will position the logo on the left of the header section (provided it's nested in the header div in the html coding)*/
+	padding: 5px 0px 0px 0px;
+}
+
+/* Navigation - this will be used to format the header (i.e. where the buttons to navigate are)*/
+#navigation {
+	float: right;
+	display: inline-block;
+	list-style: none;/*putting in none for list style ensures there are no bullets used before each of the links*/
+	padding: 0px 10px 0px 15px;
+	*width: 345px; /** Needed for IE7 **/
+}
+	
+#navigation li {
+	float: left;/*This lines up the links in order from left to right. Right would list these navigation links backwards i.e. home last.*/
+	margin: 0px 0px 0px 30px;/*change the values */
+}
+
+#navigation li a {
+	color: white;
+	font-family: "Oswald";
+	font-size: 22px;
+	text-decoration: none;/*ensures links aren't underlined*/
+	text-transform: sentencecase;/*first letter upper case the rest lower case*/
+	
+}
+
+#navigation li a:hover {/*This selected is just the name of the class will use in the html to automatically make navigation link of page currently on orange */
+	color: orange;
+	
+}
+
+#navigation li.selected a{/*This changes the colour when you hover over links in the navigation, "#navigation li.selected a" means the page that's on will be coloured automatically without hover */
+	color: orange;
+}
+
+
+/*Contents*/
+
+#contents {
+	background-color: black;
+	width: 1010px;/*This sets the width of the navigation (header bar)*/
+	margin: 0 auto	;/*This increases the distance of the navigation(header bar) from the top of the page*/
+	height: 900px;
+}
+
+#contents p {
+	color: black;
+	font-size: 13px;
+	line-height: 24px;
+	margin: 0;/*spaces the text closer together than if didn't have this in*/
+	
+}
+
+
+/*Dialog boxes in the content section */
+
+
+#leftBox{/*note: it's important to put the floats first in html code and then the centre	 so they position properly*/
+	float: left;
+	width: 330px;/*This sets the width of the navigation (header bar)*/
+	margin: 0px 0px 0px 0px;/*This increases the distance of the navigation(header bar) from the top of the page*/
+	padding: 0px 0px 0px 0px;/*This increases the size of the area: top, right, bottom and left - respectively*/
+	background-color: black;
+	height: 390px;
+}
+
+
+#middleBox{
+	width: 346px;/*This sets the width of the navigation (header bar)*/
+	margin: 0px auto;/*This increases the distance of the navigation(header bar) from the top of the page*/
+	padding: 0px 0px 0px 0px;/*This increases the size of the area: top, right, bottom and left - respectively*/
+	background-color: #181616;
+	height: 390px;
+}
+
+#rightBox{
+	
+	float: right;
+	width: 330px;/*This sets the width of the navigation (header bar)*/
+	margin: 0px auto;/*This increases the distance of the navigation(header bar) from the top of the page*/
+	padding: 0px 0px 0px 0px;/*This increases the size of the area: top, right, bottom and left - respectively*/
+	background-color: #242323;/*A little bit lighter than black*/
+	height: 390px;
+	
+}
+
+#rightBox p{
+	font-size: 14px;
+	text-transform: sentencecase;
+	color: white;
+	font-family: times new roman;
+	
+}
+
+#middleBox p{
+	font-size: 14px;
+	text-transform: sentencecase;
+	color: white;
+	font-family: times new roman;
+}
+
+#leftBox p{
+	font-size: 14px;
+	text-transform: sentencecase;
+	color: white;
+	font-family: times new roman;
+}
+
+#leftBox p a {
+
+	color: orange;
+	
+}
+
+#rightBox p a {
+
+	color: orange;
+	
+}
+ #middleBox p a {
+
+	color: orange;
+	
+}
+
+
+
+
+
+
+#leftBoxTitle{
+	height: 50px;
+	background-color: #f49007;
+}
+
+#rightBoxTitle{
+	height: 50px;
+	background-color: #f7a22e;
+}
+
+#middleBoxTitle{
+	height: 50px;
+	background-color: #e76812;
+}
+
+#rightBoxTitle p, #middleBoxTitle p, #leftBoxTitle p{
+	font-size: 22px;
+	text-transform: uppercase;
+	color: black;
+	font-family: times new roman;
+	
+}
+
+
+
+#bottomBox{
+	width: 1008px;/*This sets the width of the navigation (header bar)*/
+	margin: 5px auto;/*This increases the distance of the navigation(header bar) from the top of the page*/
+	padding: 0px 0px 0px 0px;/*This increases the size of the area: top, right, bottom and left - respectively*/
+	background-color: red;
+	height: 150px;
+
+}
+
+
+
+/*slideshow code */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+ }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+/*slideshow code*/
+
+
+
+
+/*------------------------------ FOOTER ------------------------------*/
+#footer {
+	background-image: url(../images/subtleBackground5.jpg);
+	height: 60px;
+	border-top: 2px solid orange;
+	padding: 25px 0 15px;/*This is used to change the spacing */
+	width: 1000px;/*This sets the width of the navigation (header bar)*/
+	margin: 0px auto 20px;/*This increases the distance of the navigation(header bar) from the top of the page*/
+	padding: 7px 0px 0px 10px;/*This increases the size of the area: top, right, bottom and left - respectively*/
+	text-align: right;
+}	
+
+#footer p{
+	float: left;
+	font-size: 12px;
+	color: white;
+}
+
+#footerNavigation {
+	display: inline-block;
+	list-style: none;/*putting in none for list style ensures there are no bullets used before each of the links*/
+	*width: 345px; /** Needed for IE7 **/
+}
+
+#footerNavigation li {
+	float: left;/*This lines up the links in order from left to right. Right would list these navigation links backwards i.e. home last.*/
+	margin: 0px 20px 0px 0px;/*adjust the space between these footer links*/
+}
+
+#footerNavigation li a{
+	color: white;
+	font-size: 12px;
+	line-height: 0px;
+	margin:0px, 20px, 0px, 0px;
+	text-decoration: none;
+}
+
+body {
+	background-image: url(../images/subtleBackground14.jpg);
+	font-family: "QuattrocentoSans-Regular";
+	margin: 0;
+}
+
+#products{
+	background-color: black;
+	width: 700px;/*This sets the width of the navigation (header bar)*/
+	padding: 5px 0px 0px 5px;
+	height: 935px;
+}
+
+#products p{
+	color: white;
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0 100px;
+}
+
+#products h1{ 
+	color: #e76812;/*This is a dark orange*/
+	font-size: 22px;
+	text-transform: uppercase;/*This transforms the first letter of each word to uppercase */
+	margin: 0px 0px 0px 0px;/* inputtng margin at zero removes white space between heading tag and paragraph tag elements */	
+
+}
+
+#products h2{ 
+	color: orange; 
+	font-size: 18px;
+	text-transform: uppercase;/*This transforms the first letter of each word to uppercase */
+	margin: 0px 0px 0px;/* inputtng margin at zero removes white space between heading tag and paragraph tag elements */	
+
+}
+
+#products a{
+	color: orange;
+	text-decoration:none;
+}
+
+#productsPanel{
+	float: right;
+	width: 250px;
+	height: 650px;
+}
+
+#productsSidePanel{
+	margin-top: 20px;
+	background-color: #181616;
+	width: 250px;
+	height: 150px;
+}
+
+#productsSidePanel p{
+	color: white;
+	font-size: 14px;
+	font-family: times new roman;
+}
+
+#productsSidePanel a{
+	color: orange;
+}
+
+
+
+#productsSidePanel2{
+	
+	margin-top: 60px;
+	background-color: #242323;
+	width: 250px;
+	height: 150px;
+}
+
+#productsSidePanel2 p{
+	color: white;
+	font-size: 14px;
+	font-family: times new roman;
+}
+
+#productsSidePanel2 a{
+	color: orange;
+}
+
+
+
+
+#contact{
+	background-color: black;
+	width: 700px;
+	padding: 5px 0px 0px 5px;
+	height: 935px;
+}
+
+#contact p{
+	color: white; 
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0;
+}
+
+#contact h1{ 
+	color: #e76812; 
+	font-size: 24px;
+	text-transform: uppercase;/*This transforms the first letter of each word to uppercase */
+	margin: 0px 0px 0px 0px;/* inputtng margin at zero removes white space between heading tag and paragraph tag elements */	
+
+}
+
+#contact h2{ 
+	color: orange; 
+	font-size: 18px;
+	text-transform: uppercase;/*This transforms the first letter of each word to uppercase */
+	margin: 0px 0px 0px;/* inputtng margin at zero removes white space between heading tag and paragraph tag elements */	
+
+}
+
+#contactForm{
+	margin: 0px 0px 50px 0px;
+}
+
+label {/*adjust all labels*/
+	color: white;
+}
+
+
+#contactPanel{/*I put the two side panels into this div as it allows me to position these two panels directly below each other */
+	float: right;
+	width: 250px;
+	height: 310px;
+}
+
+#contactSidePanel{
+	margin-top: 20px;
+	background-color: #181616;
+	width: 250px;
+	height: 150px;
+}
+
+#contactSidePanel p{
+	color: white;
+	font-size: 14px;
+	font-family: times new roman;
+}
+
+#contactSidePanel a{
+	color: orange;
+	
+}
+
+
+
+
+#contactSidePanel2{
+	margin-top: 60px;
+	background-color: #242323;
+	width: 250px;
+	height: 150px;
+}
+
+#contactSidePanel2 p{
+	color: white;
+	font-size: 14px;
+	font-family: times new roman;
+}
+
+#contactSidePanel2 a{
+	color: orange;
+	
+}
+
+/*the formatting for the side panels headers*/
+
+#sidePanelHeader{
+	height: 40px;
+	background-color: #e76812;
+}
+
+#sidePanelHeader h1{
+	margin: 0px 0px 0px 0px;;
+}
+
+#logoPosition{
+margin-bottom: 10px;
+}
+
+/*Image gallery styling */
+
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid orange;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+div.img a:hover img {
+    border:1px solid #0000ff;
+}
+
+div.desc {
+	color: pink;
+    text-align: left;
+    font-weight: normal;
+    width: 240px;
+    margin: 0px 0px 5px 15px;
+}
+
+#HomePanelBoxes{
+	margin: 3px 0px 0px 0px;
+}
+
+#googleMaps{
+	float: left;
+}
+
+
+
+
+
+

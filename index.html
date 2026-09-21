@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Rainbow Signs Home</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+<!--This is the header section in the body-->
+	<div id="header">
+	
+		
+			<div id="logo">
+				<a href="home.html"><img src="images/rbowLogo2d.png" onmouseover="this.src='images/rbowLogo2e.png'" onmouseout="this.src='images/rbowLogo2d.png'"/></a><!--Insert the headers logo-->
+			</div>
+			
+			
+			
+			<ul id="navigation">
+				<li class = "selected"><!--This will ensure the selected link (home for this page) on the header is formatted using the "selected" class in the css file-->
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="gallery.html">Gallery</a>
+				</li>
+				<li>
+					<a href="products.html">Products</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		
+	</div><!--the closing div in the header section-->
+	
+	
+	
+	
+	
+	
+	
+	<div id="contents">
+	
+	
+		<!--slideshow code -->
+		
+			<ul class="rslides">
+				<li><img src="images/signCompleted1HeinekenResizedTo800x400.jpg" alt=""></li>
+				<li><img src="images/signCompleted10GuinnessResizedTo800x400.jpg" alt=""></li>
+				<li><img src="images/signCompleted6ThePatriotsInnResizedTo800x400.jpg" alt=""></li>	
+			</ul>		
+		
+			
+			
+			<div id="HomePanelBoxes">
+			<div id="leftBox"><!--It's important if have 3 columns that you input the floats before the non float (centre) section in html code-->
+				<div id="leftBoxTitle">
+					<p>What type of signs do Rainbow Signs do?</p>
+				</div>
+				<p>
+					Firstly, please answer the following question:<br>
+					What type of sign do you need?<br><br>
+					Now, to answer your question:<br>
+					Rainbow signs are delighted to tell you that ("insert sign needed here") can be done.<br>
+					With over 25 years experience this is generally true.<br>
+					Why not take a look at some of the products on offer Find more information <a href ="products.html">here</a>.<br>
+				</p>
+			</div>
+			
+			<div id="rightBox">
+			
+				<div id="rightBoxTitle">
+					<p>Want a quote?</p>
+				</div>
+				
+				<p><b>Tel:</b> +353 1 620 4963</p>
+				<p><b>Mail: </b>Send us a <a href ="contact.html">message.</a></p>
+				<p><b>Address:</b> Unit 46 Canal Walk, Park West Industrial Estate, Dublin. </p>
+				<p>Get <a href ="contact.html">directions</a> to Rainbow Signs.</p>
+				<p><br>Our award winning dedication in meeting the needs of our clients - through
+				the production of high quality, custom made products, allow us to
+				guarantee a personal service that ensures your deadline is our deadline.</p>
+				
+			</div>
+		
+			<div id="middleBox">
+				<div id="middleBoxTitle">
+					<p>Why Rainbow Signs?</p>
+				</div>
+				<p>
+					Rainbow Signs, in business over 25 years, is the company of choice for Intel, Marks and Spencer, Yahoo...
+					If you want a professionally done job contact Rainbow Signs today.
+					<br><br>
+					We've supplied signs to a diverse range of businesses that include 5 star hotels, pubs, shopping centres, retailers, banks, private practitioners, state bodies, schools, churches, builders, developers, architects, designers. 
+					<br><br>We take your signage requirements from initial brief to final installation. 
+					Working with a varied array of materials in traditional craftsmanship techniques and modern computer aided production to achieve a branding solution to suit all types of commercial applications.
+					
+				</p>
+				
+			</div>
+			
+			
+		
+		</div>
+		
+			
+			
+	</div>
+		
+	
+	
+	
+
+
+
+
+
+	
+	
+	
+	
+
+	
+	<div id="footer">
+	
+	<p>© Copyright: All rights reserved</p>
+	
+	<ul id="footerNavigation">
+		<li>
+			<a href="home.html">Home</a>
+		</li>
+		<li>
+			<a href="gallery.html">Gallery</a>
+		</li>
+		<li>
+			<a href="products.html">Products</a>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul>
+		
+	</div>
+		
+	
+	
+	
+	<!--Slideshow code -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="responsiveslides.min.js"></script>	
+	
+	<script>
+	  $(function() {
+				$(".rslides").responsiveSlides({
+		  auto: true,             // Boolean: Animate automatically, true or false
+		  speed: 2000,            // Integer: Speed of the transition, in milliseconds
+		  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+		  pager: false,           // Boolean: Show pager, true or false
+		  nav: false,             // Boolean: Show navigation, true or false
+		  random: false,          // Boolean: Randomize the order of the slides, true or false
+		  pause: false,           // Boolean: Pause on hover, true or false
+		  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+		  prevText: "Previous",   // String: Text for the "previous" button
+		  nextText: "Next",       // String: Text for the "next" button
+		  maxwidth: "1010",           // Integer: Max-width of the slideshow, in pixels
+		  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+		  manualControls: "",     // Selector: Declare custom pager navigation
+		  namespace: "centered-btns",   // String: Change the default namespace used
+		  before: function(){},   // Function: Before callback
+		  after: function(){}     // Function: After callback
+		  
+		});
+	  });
+	</script>
+	
+	
+	<!--end slideshow code-->
+	
+	
+</body>
+</html>
